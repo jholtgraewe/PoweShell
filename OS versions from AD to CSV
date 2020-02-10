@@ -1,0 +1,1 @@
+Get-ADComputer -Filter * -SearchBase "OU=Workstations,OU=,OU=,DC=i,DC=org" -Property * | Select-Object Name,OperatingSystem,OperatingSystemServicePack,OperatingSystemVersion,Description | Export-CSV Name.csv -NoTypeInformation -Encoding UTF8
